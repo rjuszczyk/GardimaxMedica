@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#5b070b</color>
+    <color name="colorAccent">#ec1c24</color>
+
+    <color name="disabledRed">#b94f53</color>
+    <color name="top_bar_color">#ec1c24</color>
+</resources>

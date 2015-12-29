@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/left_top_logos"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:src="@drawable/women_transparent"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:src="@drawable/bottom_gradient"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom"
+        />
+
+    <ImageView
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/pudelko"/>
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Wybierz z listy:"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <ListView
+            android:id="@+id/agents_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

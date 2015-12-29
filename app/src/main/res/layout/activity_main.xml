@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bottom_gradient"
+    tools:context="pl.pharmaway.gardmiaxmedica.MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/top_bar_color">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/left_top_logos"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="444dp"
+        android:layout_gravity="right|top"
+        android:adjustViewBounds="true"
+        android:src="@drawable/women_transparent"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:src="@drawable/bottom_gradient"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom"
+        />
+
+    <ImageView
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/pudelko"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/choose_agent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wybierz rodzaj przedstawiciela:"/>
+        <Button
+            android:id="@+id/agent_pharmaceutical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przedstawiciel farmaceutyczny"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/agent_medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przedstawiciel medyczny"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/network_problems"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Problem z połączeniem z internetem"/>
+        <Button
+            android:id="@+id/try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spróbuj ponownie"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+ </FrameLayout>

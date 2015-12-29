@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/question_margin_left"
+        android:layout_marginRight="180dp"
+        android:layout_gravity="top"
+
+
+        android:paddingTop="@dimen/question_margin_top"
+        >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/question_number"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4."
+                android:textStyle="bold"
+                android:textColor="#ec1c24"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dokończ zdanie"
+                android:textColor="#ec1c24"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_below="@+id/header"
+
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+
+            android:text="Rekomendując pacjentowi lek na zapalenie gardła, ważne jest dla mnie, aby…."/>
+
+        <EditText
+
+            android:layout_below="@+id/question_text"
+            android:background="@drawable/text_bg"
+            android:layout_marginTop="@dimen/question_dividet_top"
+            android:id="@+id/answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+
+            android:hint="Wpisz odpowiedź aby przejść dalej"
+            android:padding="10dp"
+            android:gravity="top"
+
+            android:inputType="textMultiLine"
+
+
+            />
+
+        <Button
+            android:id="@+id/next_button"
+            android:enabled="false"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przejdź dalej"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bacground"
+            android:textSize="18sp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_marginTop="20dp"
+
+
+            android:layout_below="@+id/answer_text"
+            />
+    </RelativeLayout>
+</ScrollView>

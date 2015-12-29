@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    android:paddingBottom="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+
+        android:layout_marginLeft="@dimen/question_margin_left"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="@dimen/question_margin_top"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pytanie"
+                android:textColor="#ec1c24"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/question_number"
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:textStyle="bold"
+                android:textColor="#ec1c24"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Najczęstszą przyczyną ostrych zapaleń gardła u dzieci w wieku 3-6 lat są:"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:id="@+id/answerA"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_ans_a"
+                android:src="@drawable/ans_a"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/answer_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odpowiedz A "
+                android:textSize="20sp"
+                android:layout_gravity="left|center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:id="@+id/answerB"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_ans_b"
+                android:src="@drawable/ans_b"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/answer_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odpowiedz B "
+                android:textSize="20sp"
+                android:layout_gravity="left|center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:id="@+id/answerC"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_ans_c"
+                android:src="@drawable/ans_c"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/answer_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odpowiedz C "
+                android:textSize="20sp"
+                android:layout_gravity="left|center"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_button"
+            android:enabled="false"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przejdź dalej"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bacground"
+            android:textSize="18sp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</FrameLayout>

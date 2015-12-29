@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    android:paddingBottom="25dp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+
+            android:layout_marginLeft="@dimen/form_margin_left"
+            android:layout_marginRight="@dimen/form_margin_right"
+android:paddingTop="@dimen/form_margin_top"
+
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="UZUPEŁNIJ DANE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:id="@+id/form_imie"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Imię"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_nazwisko"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:id="@+id/form_nazwisko"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Nazwisko"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_nazwa_apteki"
+                        />
+                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+
+                        android:id="@+id/form_nazwa_apteki"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Nazwa apteki"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_id_apteki"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:inputType="number"
+                        android:id="@+id/form_id_apteki"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:hint="ID Apteki"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_ulica"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    >
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:id="@+id/form_uilca"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:hint="Ulica"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+
+                        android:layout_marginRight="5dp"
+
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_nr"
+                        />
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/form_nr"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Nr"
+                        android:padding="7dp"
+                        android:gravity="top"
+
+
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/form_miasto"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp">
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:id="@+id/form_miasto"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:hint="Miasto"
+                        android:padding="7dp"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:nextFocusForward="@+id/form_kod"
+                        />
+                    <EditText
+                        android:background="@drawable/white_bg"
+                        android:layout_marginTop="@dimen/divider_top_margin"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/form_kod"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Kod"
+                        android:padding="7dp"
+                        android:gravity="top"
+                        android:inputType="textPostalAddress"
+                        android:imeOptions="actionNext"
+
+                        android:singleLine="true"
+                        android:nextFocusForward="@+id/form_telefon"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:background="@drawable/white_bg"
+                    android:layout_marginTop="@dimen/divider_top_margin"
+                    android:id="@+id/form_telefon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefon"
+                    android:padding="7dp"
+                    android:gravity="top"
+
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"
+                    android:inputType="phone"
+                    />
+                 <View android:layout_height="1dp"
+                     android:layout_width="0dp"
+                     android:layout_weight="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/divider_top_margin_small">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/check1"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Oświadczam, że zapoznałem się z Regulaminem, akceptuję jego treść oraz spełniam jego warunki."
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/divider_top_margin_small">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/check2"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych zgodnie z przepisami ustawy z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U z 2014 poz. 1182). Administratorem danych jest PharmaWay, ul. Księżarskiego 4, 30-376 Kraków. Moje dane udostępniam dobrowolnie, przysługuje mi prawo dostępu do nich oraz ich poprawiania na warunkach określonych w ustawie o ochronie danych osobowych."
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/divider_top_margin_small">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/check3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Wyrażam zgodę na otrzymywanie informacji handlowych środkami komunikacji elektronicznej zgodnie z przepisami ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (dz. U. 2002 r. nr 144, poz. 1204 z późn. zm.)."
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                android:enabled="false"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Przejdź dalej"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_bacground"
+                android:textSize="18sp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="@dimen/divider_top_margin"/>
+        </LinearLayout>
+     </ScrollView>
+</FrameLayout>
